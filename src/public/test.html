@@ -1,0 +1,44 @@
+
+
+<html>
+    
+    <body>
+        <div id="progress"></div>
+
+<script>
+  
+  console.log(1);
+
+setTimeout(() => console.log(2));
+
+Promise.resolve().then(() => console.log(3));
+
+Promise.resolve().then(() => setTimeout(() => console.log(4)));
+
+Promise.resolve().then(() => console.log(5));
+
+setTimeout(() => console.log(6));
+
+console.log(7);
+
+
+
+let people = [{ name:'a',age:75}
+,{name:'b',age:65}
+,{name:'d',age:45}
+,{name:'c',age:37}
+,{name:'e',age:12}
+,{name:'g',age:23}
+,{name:'f',age:8}
+,{name:'h',age:5}
+,{name:'j',age:2}
+,{name:'i',age:100}]
+
+let totalPeopleAge = people.reduce((total,person) => { console.log('person',person.age); return person.age+total},0);
+
+console.log('totalPeopleAge', totalPeopleAge);
+</script>
+    </body>
+</html>
+
+
