@@ -11,7 +11,7 @@ class CustomList {
         return this.list;
     }
 
-    getItem[Symbol.iterator] = function (){
+    *[Symbol.iterator]getItem(){
         for(let i =0;i<this.list.length;i++){
             yield this.list[i];
         }
@@ -19,3 +19,8 @@ class CustomList {
 }
 
 console.log(new CustomList(list));
+
+// function *gen(){
+//     for(let i=0;i<=5;i++) yield i;
+// }
+// const myGen = gen();
