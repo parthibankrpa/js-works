@@ -10,7 +10,7 @@ const sortFn = (a, b) => a - b;
 
 function rearrangeStudents(arrA = [], arrB = []) {
   if (arrA.length === 0 || arrA.length !== arrB.length) {
-    // this should be able to take care when arrB length is zero also
+    // this should also work in case of arrB length is zero
     return -1;
   }
   let operations = 0;
