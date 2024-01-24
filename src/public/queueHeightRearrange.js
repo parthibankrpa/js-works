@@ -27,7 +27,6 @@ function rearrangeStudents(arrA = [], arrB = []) {
         index + 1 < arrA.length &&
         item === arrA[index + 1]
       ) {
-        console.log("step2");
         let temp = arrB[index];
         arrB[index] = arrA[index + 1];
         arrA[index + 1] = temp;
@@ -40,7 +39,6 @@ function rearrangeStudents(arrA = [], arrB = []) {
         let temp = arrA[index];
         arrA[index] = arrB[index + 1];
         arrB[index + 1] = temp;
-        console.log("temp", temp);
         operations++;
       } else {
         throw "height not matched"; // throwing error to break the look when height not matched for an item in middle of the array
