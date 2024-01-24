@@ -41,7 +41,7 @@ function rearrangeStudents(arrA = [], arrB = []) {
         arrB[index + 1] = temp;
         operations++;
       } else {
-        throw "height not matched"; // throwing error to break the look when height not matched for an item in middle of the array
+        throw "height not matched"; // throwing error to break the loop when height not matched for an item in middle of the array
       }
     });
   } catch (e) {
